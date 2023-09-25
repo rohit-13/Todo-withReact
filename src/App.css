@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: Monserrat, sans-serif;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  max-width: 608px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 24px 0 24px 0;
+}
+
+.todo-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #bdbdbd;
+  margin: 24px 0 0 0;
+  padding: 0;
+  width: 90%;
+  list-style: none;
+}
+
+.todo-tab {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+
+.todo-tab-active {
+  border-bottom: 4px solid #2f80ed;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+  width: 90%;
+}
+
+.todo-input {
+  font-family: Montserrat;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  width: 70%;
+  height: 56px;
+  padding-left: 16px;
+  margin-right: 24px;
+}
+
+.todo-submit {
+  font-family: Montserrat;
+  padding: 20px 40px;
+  background-color: #2f80ed;
+  border-radius: 16px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.todo-tasks-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.todo-tasks {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 16px;
+  padding-left: 0;
+}
+
+.todo-task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 8px 8px 0;
+}
+
+.todo-task {
+  display: flex;
+  align-items: center;
+}
+
+.todo-task-input {
+  margin: 0;
+  border: 1px solid #828282;
+  border-radius: 4px;
+  min-width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #2f80ed;
+}
+
+.todo-task-input:checked {
+  border: none;
+  background-color: #2f80ed;
+}
+
+.todo-task-input:checked ~ .todo-task-label {
+  text-decoration: line-through;
+}
+
+.todo-task-label {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+}
+
+.todo-task-delete {
+  display: block;
+  color: #bdbdbd;
+  cursor: pointer;
+}
+
+.todo-tasks-delete-all {
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #eb5757;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-tasks-delete-icon {
+  margin-right: 8px;
+}
+
+.todo-tasks-delete-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
